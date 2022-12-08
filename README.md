@@ -28,7 +28,9 @@ Para alcançar os requisitos propostos primeiro realizamos uma análise explorat
 
 Segue o Modelo elaborado:
 
-image.png
+
+![image](https://user-images.githubusercontent.com/62062407/206534127-637a0763-a866-4755-b2c8-b206ef5250bd.png)
+
 
 
 
