@@ -39,6 +39,8 @@ Divimos em duas etapas de tratamento, a primeira no código tratamento.ipynb e a
 
 #### Tratamento
 
+Começamos fazendo a verificação da base de dados, com o comando dataset.describe() conseguir ter um resumo das estatísticas dos dados contidos na base coletada com isso percebemos que não havia valores  duplicados ou nulos, em seguida verificamos os tipos das variáveis armazanadas em busca de problemas de tipagem mas o interorator as indentificou todas como o Tipo Object que Seria o tipo textual em um DataFrame , após fazer esssa verificação e concluido que a base estaca apita para seguir para a próxima etapa foram feitas as alterações necessárias e os dados foram carregados em novos arquivos: dataset_ibge_tratado.csv,dataset_tratado.csv na pasta tratamento
+
 
 
 #### Transformação
