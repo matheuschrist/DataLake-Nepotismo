@@ -32,6 +32,11 @@ Segue o Modelo elaborado:
 ![image](https://user-images.githubusercontent.com/62062407/206534127-637a0763-a866-4755-b2c8-b206ef5250bd.png)
 
 
+Optamos por organizar a modelagem com uma tabela Fato Central e duas Dimensões seguindo o modelo star schema proposto por Ralph Kimball, devido notarmos que o para locarlizarmos os casos possíveis de Nepotismo era necessario uma relação entre as pessoas que exerciam cargos indicados com as pessoas que exerciam cargos comicionados para isso decidimos separa quem foi indicado para estar na tabela fato e os indicadores na tabela dimensão os correlacionando pelos seus sobrenomes, onde seria identificados possívies casos de nepotismo e as que não houverem relação serão mantidas para meio informativo de quantidade e porcentagem de ocorência por região e Outras métricas que serão possíveis ser analisadas.
+
+ 
+Para podermos analisarmos os casos por Estados e Municipos oprtamos por manter na tabela Fato apenas o código do IBGE e criarmos uma dimensão Localidade contendo esses campos para analise futura.
+
 
 
 Divimos em duas etapas de tratamento, a primeira no código tratamento.ipynb e a segunda no código transformacao.ipynb, descreveresmo com detalhes cada uma delas a seguir.
@@ -50,6 +55,9 @@ Começamos fazendo a verificação da base de dados, com o comando dataset.descr
 
 Na etapa de transformação ja recebemos os dados validados e tratados de qualquer erro de codificação ou valores vazios e nulos, e realizamos as tranformações necessárias para alcançar o modelo Dimensional para analise de nepotismo.
 
+
+
+Como na base disponibilizada não continha informações dos Municípios e seus estados foi
 
 
 
