@@ -55,12 +55,20 @@ Começamos fazendo a verificação da base de dados, com o comando dataset.descr
 
 Na etapa de transformação ja recebemos os dados validados e tratados de qualquer erro de codificação ou valores vazios e nulos, e realizamos as tranformações necessárias para alcançar o modelo Dimensional para analise de nepotismo.
 
+Primeiro realizamos a remoção de caracteres indesejados na base como virgulas, hífem e aspas, removemos também os espaços duplos.
+Como foi proposto realizar a validação do CPF utilizamos uma blibliteca (https://pypi.org/project/validate-docbr/) que realiza a validação do CPF e caso ouvesses algum que não fosse válido o removemos do dataset.
+
+Depois utilizamos Regex(expressões regulares) para separar o nome do sobrenome, para evitar problemas de pessoas que possíam nomes compostos como Pedro José por exemplo consideramos como sobrenome apenas o utlimo valor de caracteres no nome completo finalizando a etapa de separação dos nomes e sobrenomes realizamos um JOIN(Junção de duas tabelas) com o dataset base do IBGE para acrescentarmos a nossa base de dados os campos Código do IBGE, Estado e a sigla de cada estado feito isso separamos os esses valores em uma tabela chamada Dim_localidade como proposto no modelo dimensional elaborado deixando apenas a coluna Código do IBGE no nosso dataset que futuramento irá compor a nossa tabela Fact_indicados.
+Porém antes realizamos a separação do dataset pelos Tipos de cargos ficando os que possuíam cargos indicados na tabela Fact_indicados e os de cargos Eleitos e Concusados na Dim_indicadores.
+
+Feito essa separação começamos a validação dos possíveis casos de nepotismo , realizamos uma junção das tabelas Fact_indicados e Dim_indicadores pelo Sobrenome e por Cidade visando encontrar apenas os casos que ocorrem dentro das regiões vigentes da pessoa que indicou, para isso o método de junção que traz apenas as intececções contidas nas tabelas seguindo os paramentros passados, assim consigmos encontrar os possíveis casos de nepotismo feito isso criamos uma coluna que indicaria se aquele cadastro possui possível caso de Nepotismo e no outros que não foram encontrados esses requisitos Criamos uma coluna indicando que não possuia Nepotismo, feito toda essa identificação e separação dos cadastros do nosso dataset realizamos a junção das bases separadas para identificação e finalizamos o tratamento da dimensão Dim_indicadores e Fact_indicados para finalizar realizamos o carregamento de todas as tabelas conslídas no diretório porcessamento indicado que todos os dados já foram processados e estão pronto para ser consuimido para serem criados as análises nos mesmos.
 
 
-Como na base disponibilizada não continha informações dos Municípios e seus estados foi
 
 
+### Visualização 
 
+.... EM Construção ...
 
 
 
