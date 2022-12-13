@@ -57,4 +57,5 @@ Utilizamos também um gráfico de barras onde ele traz informações de quantida
 
 Resultado obtido: 
 
+![image](https://user-images.githubusercontent.com/70177188/207368747-68308966-af8b-40ef-a654-20013c57040d.png)
 
