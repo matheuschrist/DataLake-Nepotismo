@@ -2,12 +2,12 @@
 
 ## Integrantes
 
-Alyson Vargas
-Carlos
-Diogo dos Santos Freires
-João Victor Fritoli
-Matheus Christ de Andrade
-Patrick
+Alyson Vargas \
+Carlos\
+Diogo dos Santos Freires\
+João Victor Fritoli\
+Matheus Christ de Andrade\
+Patrick\
 Rafael da Silva Lopes
 
 
