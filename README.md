@@ -1,5 +1,16 @@
 # Projeto Para Analise de Nepotismo
 
+## Integrantes
+
+Alyson Vargas
+Carlos
+Diogo dos Santos Freires
+João Victor Fritoli
+Matheus Christ de Andrade
+Patrick
+Rafael da Silva Lopes
+
+
 ## Base de dados 
 
 1. nepotismo.csv
